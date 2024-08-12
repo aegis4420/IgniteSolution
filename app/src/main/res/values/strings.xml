@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">IgniteSolution</string>
-    <string name=""
+    <string name="app_title">Ignite Solution</string>
+    <string name="btnTroubleshoot">Troubleshoot</string>
+    <string name="btnCuttingTech">Cutting Tech</string>
+    <string name="btnPMSchedule">PM Schedule</string>
 </resources>
