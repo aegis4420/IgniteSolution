@@ -1,27 +1,22 @@
 package com.example.ignitesolution
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.ignitesolution.ui.theme.IgniteSolutionTheme
+import android.widget.Button
 
-import android.view.LayoutInflater
-import android.view.View
-import androidx.compose.ui.platform.ComposeView
-import androidx.compose.ui.viewinterop.AndroidView
 
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main) // Set XML layout as content view
+
+        val troubleshootingButton: Button = findViewById(R.id.btnTroubleshoot)
+        troubleshootingButton.setOnClickListener {
+            // Start the troubleshoot activity when the button is clicked
+            val intent = Intent(this, TroubleshootingActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
