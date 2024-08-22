@@ -4,4 +4,7 @@
     <string name="btnTroubleshoot">Troubleshoot</string>
     <string name="btnCuttingTech">Cutting Tech</string>
     <string name="btnPMSchedule">PM Schedule</string>
+    <string name="btnFSCUT">铂楚 FSCUT</string>
+    <string name="btnWelhong">维宏 Weihong</string>
+    <string name="btnHans">大族Han’s</string>
 </resources>
